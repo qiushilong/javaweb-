@@ -1,0 +1,9 @@
+.right{
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+.right ul{
+    margin-top: 20px;
+    text-align: center;
+}

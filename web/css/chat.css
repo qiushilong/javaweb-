@@ -1,0 +1,216 @@
+.content {
+    position: relative;
+    overflow: hidden;
+}
+/* 修改滚动条样式 */
+/* 滚动条整体 */
+.center::-webkit-scrollbar{
+    width:5px;
+}
+/* 滚动条轨道 */
+.center::-webkit-scrollbar-track{
+    background: #999;
+    border-radius:2px;
+}
+/* 滚动条里的滑块 */
+.center::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius:10px;
+}
+.center{
+    float: right;
+    width: 50%;
+    height: 100%;
+    /* background-color: pink; */
+    border-right: 1px solid #ccc;
+    overflow-y: scroll;
+    padding: 20px 20px;
+}
+.center ul li{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.txt_left{
+    text-align: left;
+}
+.txt_right{
+    text-align: right;
+}
+.tx{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.tx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align:top;
+}
+.whowhen{
+    position: absolute;
+    top: 0;
+    left: 35px;
+}
+.name{
+    display: inline-block;
+    font-size: 12px;
+    color: green;
+    vertical-align: top;
+}
+.date{
+    display: inline-block;
+    font-size: 12px;
+    color: green;
+    vertical-align: top;
+}
+.msg{
+    margin-top: 20px;
+    margin-left: 0;
+    display: inline-block;
+    background-color: #5c8afa;
+    border-radius: 10px;
+    padding: 0 10px;
+    color: #000;
+}
+.img_msg{
+    margin-top: 10px;
+    margin-left: 0;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.txt_right .whowhen{
+    position: absolute;
+    top: 0;
+    right:35px;
+}
+
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1609459646916'); /* IE9 */
+    src: url('iconfont.eot?t=1609459646916#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAa8AAsAAAAAC+wAAAZvAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDQAqKUIhrATYCJAMYCw4ABCAFhG0HbhsvClGUL1KI7C9QBoyNQ2oMDKNlLVGIDqcDAEAU/JJn4G2X720PNPA9d6DhGfnvgXj4//2+7XOffJeRhFgkiUgySZNQSUSVFFgdWvJQGD7P96VJlRQj3qRqoNJ2UPGSnyqNBqaDPuTTwKPdP+IEHdUDgMz/2vwL338D/B8KTDD9/vnyeidLJ/MNF1LSOmmd+YBPhZhkb9W7Qzf1AEHId3DIiX0PJUDJvQZ8hAx2/X6tnli90HTbb9fLvlNTIDEkMklDIiQR7SqhQogRk+XkMjPqkpq/2OUE6pYNhe2btYAGBjmpC7Rc41gfMETs8gJ+qJrKjENz8Y5WNT1fAHjr/H38A64wkBQZeaVTKzODYMpPo3xMazKV2p4X16PIsAmQE/cy/TfgnnaTo69nnZ2wB1BXlaSfJJuA/KdddaCekb+uqeXJpPc/XkGUpL4J9rFCwU+jQZHxk6RI/LRRBD8DFDk/8+0KmMsWh6dAfAPSPrA3nTLJVZSKg91atzGbO81mK2rHrEitVnaM2w+6lzJ6SrXTLABqPsuqSM/XfruCcS9ydNRS1IvTqgIZ7cCwgsLntoC8Yjx/zJPq6IBeogBSCFmAW0U4NTEBC3uI1cvbb0ZdmcLRljxyTE2lQnbGs34KR4iZ6NnD8OCpHO+wwEtYV/HSHM3truQfp/qnsu6pEpIkF5aCdqpDbU1FJLtUWDDtDWEBBHZdwT2iQXGzp3ViBsOSSVrXeiqfjX/s5h6tuv8IVvMzH7X0qRFW0oRH8BncXdOkUhHTMam1V47ftMOpdhV5+Gr/wHiqGV836uoc5e1FW4IsiZCaqr9hqyFRr5UdEKdueVOOtYMq8nb3TLTj7eu9XO8sLNAUXffwCZ881s9e/qOb+7B1RKR/MoqPEJIrLr5NvEt9o772jE6SU8wMNd0S5K0KdtfSqmSyw/jPvFudWh37SKIBUFMxLKFxu0uWVrCdXWO4uUHSLEJ2bxkQBj9IYrOrpquZa/aFxECzRZfpq3aT+REk3nwlQkgw/U/NbziuH6kZBE1652JVvWFy90LVYqgeNFXd7quTar6a/lvzs37yrZobG28s/iHArczQNx0YcM9T/Dma8lw3V9xK7njVYUZj1qflLd+b9+3fDK0azLR5X82Hc1NZ46ym49AqA1Dp5YnMw4czJ65nTh4+9NJef2gOAaGZSEGs0hgYuJqXn4v6OnVLfp6vfUisPFrumksCO1iT9bzdLXJN3QqOtr3zZLg1KCNQujpowXtsU9dk2GG6OYQeXn7g40KMWcEWxEKhLbyQgACxWkHkhpxcosOhnJYWwyLTYaOeHepNV5p34P9HP3Vl3ewaXzp+7UC3aXhzjtHMLYtlkJj8L7xSnho+pbbkmOTNlKNYL10z/UF5hqr9cjlkRCoH5RTtI5u7xLzuoV8+IiveUdt/tztL/itaR5YrJ2Rzm8wPcOwZYbEQt4ibFutNM0pYrYSN59VMF9MvSn7/dlp8RhCqFP/63RnJaXz4VuK6wG2BaYGx3zMD4866b3LfuOxcZ0PMulw+b4u/F9Mw1Z138tfC6NIKuSZwbmvDimOAb+ndY8vSPsdxy8ndvUUseC3cHXO24XborbYjLN5qSMSUB6cEZi4eQp+xGS/ohIJy8YkvX09ITkrIhp8AepcHLbPTv2dXGY3m19N9p73po6+stpFeBNuBXBM/IvoH/CeAq45wF/HJwrzBlxf1AxfU0mYgvyylqlk/4beB+nvNezE8eJNU9eUKwiAaW6FyFMxp+UclHWX+mtqQs8SlF/TZhLo2CxUT7nvVlnHEVihN4yiApGIJMlWr6Dl7ExQaNkOpaifUbTT76IYBES7yGjbYJyB0HYGk7Ttkum7Tc/ZLKIx9gVI3cKg7HW1P2bAmOHK6iHwyCkL/FsgF+Biju2TSbV2GWCXiE8MqR+BBosSloNPmiJdmoxgS29hD2si6ZJmBjMhH4SxxNRSJ8DAu8iEUkG0pshwfZ7czWXdkC/BRQNpLhPjIkCDIbwuIE8CLYay5ZWTi95dBWIoIH7Fgyre0ByKScCuHnGwcDPpsfYw15Vi6JRuxXGTKMiDm2syLgmaRF4loeR4Uz94oBAmQ2aTUyMaNY6eZGK7e1r8xepSXQZ08XRkpssijiDIqqiu+GBvizFWtfoVXoj5eVvzcZdTpbC3xiqTwebFhDqcxtVrgYqxTv9lDw+cEAAA=') format('woff2'),
+    url('iconfont.woff?t=1609459646916') format('woff'),
+    url('iconfont.ttf?t=1609459646916') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1609459646916#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.right_bottom_right::-webkit-scrollbar{
+    width:5px;
+}
+/* 滚动条轨道 */
+.right_bottom_right::-webkit-scrollbar-track{
+    background: #999;
+    border-radius:2px;
+}
+/* 滚动条里的滑块 */
+.right_bottom_right::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius:10px;
+}
+
+.right{
+    position: relative;
+    float: right;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.right .right_top span{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.right .right_top span:first-child{
+    margin-left: -10px;
+}
+.right .right_top span:hover{
+    color: yellowgreen;
+}
+.right .right_top{
+    width: 100%;
+    height: 10%;
+}
+.right .right_bottom{
+    position: relative;
+    width: 300%;
+    height: 90%;
+}
+.right .right_bottom .right_bottom_left{
+    float: left;
+    width: 33.34%;
+}
+.right .right_bottom .right_bottom_right{
+    float: left;
+    width: 33.34%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.right_bottom_right img{
+    cursor: pointer;
+}
+.right .right_bottom .addEmoji{
+    float: left;
+    width: 33.32%;
+    height: 100%;
+    text-align: center;
+}
+.right .right_bottom .addEmoji ul li{
+    margin-top: 50px;
+}
+/*聊天界面*/
+.right .right_bottom .right_bottom_left textarea{
+    margin-top: 100px;
+    width: 80%;
+}
+.right .right_bottom .right_bottom_left input{
+    margin-top: 50px;
+    width: 50px;
+}
+
+.todown {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    z-index: 1000;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translate(-25px, 25px);
+    cursor: pointer;
+}
+
+.todown::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 18px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+}

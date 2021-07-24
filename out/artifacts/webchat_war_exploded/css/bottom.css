@@ -1,0 +1,9 @@
+.bottom{
+    width: 99.5%;
+    height: 60px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 60px;
+    padding-left: 30px;
+}

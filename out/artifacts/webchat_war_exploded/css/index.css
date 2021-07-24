@@ -1,0 +1,72 @@
+.show {
+    width: 600px;
+    height: 400px;
+    margin: 50px auto 50px;
+    /* 透视 */
+    perspective: 600px;
+
+}
+
+.show ul {
+    width: 2000px;
+}
+
+.show ul li {
+    position: absolute;
+    float: left;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid rgb(175, 167, 167);
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.box_left {
+    transform: translate3d(-400px, 0, -200px);
+    transition: all 0.3s;
+}
+
+.box_center {
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+.box_right {
+    transform: translate3d(400px, 0, -200px);
+    transition: all 0.3s;
+}
+
+.roomList {
+    display: inline-block;
+    width: 570px;
+    margin-top: 30px;
+}
+
+.roomList div {
+    overflow: hidden;
+    float: left;
+    width: 150px;
+    margin: 0 20px 0;
+}
+
+.roomList div h6 {
+    overflow: hidden;
+    width: 150px;
+    height: 225px;
+}
+
+.roomList div h6 img {
+    width: 150px;
+    height: 225px;
+    transition: all .6s;
+
+}
+
+.roomList div h6 img:hover {
+
+    transform: scale(1.2, 1.2);
+    transform-origin: center center;
+    transition: all .6s;
+}

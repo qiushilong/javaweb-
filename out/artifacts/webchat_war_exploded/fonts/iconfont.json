@@ -1,0 +1,44 @@
+{
+  "id": "2294694",
+  "name": "1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6901605",
+      "name": "房间",
+      "font_class": "fangjian",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "1089291",
+      "name": "加入",
+      "font_class": "buoumaotubiao11",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "18004825",
+      "name": "搜索房间",
+      "font_class": "sousuofangjian-01",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "779523",
+      "name": "表情",
+      "font_class": "biaoqing1",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "14348127",
+      "name": "消 息 (1)",
+      "font_class": "xiaoxi1",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    }
+  ]
+}

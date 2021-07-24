@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tomcat-servlet-api-8.5.57 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/webchat_war_exploded/WEB-INF/lib/tomcat-servlet-api-8.5.57.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

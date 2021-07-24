@@ -1,0 +1,33 @@
+.right{
+    float: right;
+    width: 75%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.right ul{
+    margin-top: 20px;
+    text-align: center;
+}
+.right ul li{
+    margin-top: 10px;
+}
+.right ul li input{
+    margin-left: 20px;
+}
+
+/* 修改滚动条样式 */
+/* 滚动条整体 */
+.right::-webkit-scrollbar{ 
+    width:5px;
+}
+/* 滚动条轨道 */
+.right::-webkit-scrollbar-track{
+    background: #999;
+    border-radius:2px;
+}
+/* 滚动条里的滑块 */
+.right::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius:10px;
+}
